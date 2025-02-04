@@ -97,7 +97,7 @@
     <main>
       <div class="container container-md container-lg mt-5 pt-5">
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 mt-3">
-          <div class="col col-lg-9">
+          <div class="col col-lg-9 mb-3">
             <div class="d-flex justify-content-between">
               <h3>Catalogo Libri</h3>
               <input
@@ -106,6 +106,7 @@
                 value="Aggiungi Libro"
               />
             </div>
+            <!-- TABLE HEADER END -->
             <table class="table table-striped mt-3">
               <thead>
                 <tr>
@@ -334,10 +335,121 @@
             </table>
           </div>
           <div class="col col-lg-3">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-            quam rem eos quaerat voluptatum architecto corporis. Blanditiis
-            nulla quibusdam fugiat? Pariatur officia amet minima voluptate nisi
-            soluta cum nostrum nobis?
+            <div class="card mb-3 w-100">
+              <div class="card-header">
+                <h3 class="fw-normal">Todo</h3>
+              </div>
+              <ul class="list-group p-3">
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                  <label class="form-check-label" for="firstCheckbox"
+                    >Chiamare segreteria</label
+                  >
+                </li>
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                  <label class="form-check-label" for="firstCheckbox"
+                    >Mandare avvisi prestiti scaduti</label
+                  >
+                </li>
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                  <label class="form-check-label" for="firstCheckbox"
+                    >Ordinare nuovi libri</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card mb-3 mt-3 w100">
+              <div class="card-header">
+                <h3 class="fw-normal">F.A.Q.</h3>
+              </div>
+              <div class="accordion p-3" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-controls="collapseOne"
+                    >
+                      Come aggiungere un nuovo libro?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Cliccando sul bottone blu "Aggiungi Libro" situato
+                      all'inizio del catalogo libri
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-controls="collapseTwo"
+                    >
+                      Come posso accedere all'anagrafica utenti?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Cliccando sul link "Anagrafica utenti" in alto, nel menu
+                      di navigazione.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-controls="collapseThree"
+                    >
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Si, puoi usare questa dashboard da mobile.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
