@@ -13,6 +13,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
@@ -89,7 +95,7 @@
     </header>
     <!-- Header END -->
     <main>
-      <div class="container container-md container-lg bg-secondary mt-5 pt-5">
+      <div class="container container-md container-lg mt-5 pt-5">
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 mt-3">
           <div class="col col-lg-9">
             <div class="d-flex justify-content-between">
@@ -101,48 +107,230 @@
               />
             </div>
             <table class="table table-striped mt-3">
-              <tr>
-                <thead>
-                  <tr>
-                    <th scope="col">Titolo</th>
-                    <th scope="col">Data prestito</th>
-                    <th scope="col">Stato</th>
-                    <th scope="col">Azioni</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem.</td>
-                  </tr>
-                  <tr>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem.</td>
-                  </tr>
-                  <tr>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem.</td>
-                  </tr>
-                  <tr>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem.</td>
-                  </tr>
-                  <tr>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem.</td>
-                  </tr>
-                </tbody>
-              </tr>
+              <thead>
+                <tr>
+                  <th class="w-50" scope="col">Titolo</th>
+                  <th scope="col" class="d-sm-none d-md-table-cell">
+                    Data prestito
+                  </th>
+                  <th scope="col">Stato</th>
+                  <th scope="col">Azioni</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>I pilastri della terra</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>I promessi sposi</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il signore degli anelli</td>
+                  <td class="d-sm-none d-md-table-cell">18/10/2023</td>
+                  <td>
+                    <span class="badge text-white text-bg-warning"
+                      >In prestito</span
+                    >
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Harry Potter e la pietra filosofale</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il codice Da Vinci</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-danger">Non disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Shining</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>La divina commedia</td>
+                  <td class="d-sm-none d-md-table-cell">21/09/2023</td>
+                  <td>
+                    <span class="badge text-white text-bg-warning"
+                      >In prestito</span
+                    >
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il trono di spade</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il mondo di Sofia</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-danger">Non disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Le cronache di Narnia: il leone, la strega e l'armadio
+                  </td>
+                  <td class="d-sm-none d-md-table-cell">25/07/2023</td>
+                  <td>
+                    <span class="badge text-white text-bg-warning"
+                      >In prestito</span
+                    >
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Harry Potter e la pietra filosofale</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il codice Da Vinci</td>
+                  <td class="d-sm-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-secondary">
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                    <span
+                      class="d-inline-block border border-secondary rounded-3 border-1 p-1 action_block"
+                      ><i class="fa-solid fa-trash"></i
+                    ></span>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div class="col col-lg-3">
