@@ -17,23 +17,54 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+      <nav
+        class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark fixed-top"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">primary</a>
+          <a class="navbar-brand" href="#"
+            ><img height="60  " src="./assets/img/duck.png" alt=""
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarID"
-            aria-controls="navbarID"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarID">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <form class="d-flex mt-3" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Cerca..."
+                  />
+                  <button class="btn btn-outline-light" type="submit">
+                    Cerca
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
