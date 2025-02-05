@@ -100,40 +100,45 @@
         <form class="row mt-4" method="get">
           <div class="col">
             <div class="mb-3">
-              <label for="" class="form-label fw-medium">Nome Autore</label>
+              <label for="name" class="form-label fw-medium">Nome Autore</label>
               <input
                 type="text"
-                name=""
-                id=""
+                name="name"
+                id="name"
                 class="form-control"
                 placeholder="Inserisci il nome dell'autore"
                 aria-describedby="helpId"
+                required
               />
             </div>
           </div>
           <div class="col">
             <div class="mb-3">
-              <label for="" class="form-label fw-medium">Cognome Autore</label>
+              <label for="surname" class="form-label fw-medium"
+                >Cognome Autore</label
+              >
               <input
                 type="text"
-                name=""
-                id=""
+                name="surname"
+                id="surname"
                 class="form-control"
                 placeholder="Inserisci il cognome dell'autore"
                 aria-describedby="helpId"
+                required
               />
             </div>
           </div>
           <div class="col-12">
             <div class="mb-3">
-              <label for="" class="form-label fw-medium">Cognome Autore</label>
+              <label for="title" class="form-label fw-medium">Titolo</label>
               <input
                 type="text"
-                name=""
-                id=""
+                name="title"
+                id="title"
                 class="form-control"
                 placeholder="Inserisci il titolo del libro"
                 aria-describedby="helpId"
+                required
               />
               <small id="helpId" class="text-muted"
                 >Titolo versione italiana</small
@@ -142,14 +147,15 @@
           </div>
           <div class="col col-sm-12 col-lg-4">
             <div class="mb-3">
-              <label for="" class="form-label fw-medium">Genere</label>
+              <label for="genre" class="form-label fw-medium">Genere</label>
               <select
                 class="form-select fw-medium"
-                name=""
-                id=""
+                name="genre"
+                id="genre"
                 class="form-control"
                 placeholder="Inserisci il cognome dell'autore"
                 aria-describedby="helpId"
+                required
               >
                 <option selected>Scegli il genere</option>
                 <option value="fantasy">Fantasy</option>
@@ -160,7 +166,7 @@
           </div>
           <div class="col col-sm-12 col-lg-4">
             <div class="mb-3">
-              <label for="" class="form-label fw-medium"
+              <label for="year" class="form-label fw-medium"
                 >Anno di Pubblicazione</label
               >
               <input
@@ -168,41 +174,42 @@
                 min="1900"
                 max="2025"
                 step="1"
-                name=""
-                id=""
+                name="year"
+                id="year"
                 class="form-control"
                 placeholder="Inserisci l'anno"
                 aria-describedby="helpId"
+                required
               />
             </div>
           </div>
           <div class="col col-sm-12 col-lg-4">
             <div class="mb-3">
-              <label for="" class="form-label fw-medium">ISBN#</label>
+              <label for="isbn" class="form-label fw-medium">ISBN#</label>
               <input
                 type="text"
-                name=""
-                id=""
+                name="isbn"
+                id="isbn"
                 class="form-control"
                 placeholder="Inserisci il codice ISBN#"
                 aria-describedby="helpId"
+                required
               />
             </div>
           </div>
 
-          <hr class="mt-5" />
+          <hr class="mt-5 mb-5" />
 
           <div class="col-12">
             <div class="mb-3">
-              <label for="" class="form-label fw-medium">Note</label>
-              <input
-                type="textarea"
-                name=""
-                id=""
+              <label for="note" class="form-label fw-medium">Note</label>
+              <textarea
                 class="form-control"
                 placeholder="Inserisci eventuali note sul libro"
-                aria-describedby="helpId"
-              />
+                name="note"
+                id="note"
+                rows="3"
+              ></textarea>
             </div>
           </div>
 
@@ -212,9 +219,10 @@
                 class="form-check-input"
                 type="checkbox"
                 value=""
-                id="flexCheckDefault"
+                id="digital"
+                name="digital"
               />
-              <label class="form-check-label fw-medium" for="flexCheckDefault">
+              <label class="form-check-label fw-medium" for="digital">
                 Disponibile anche in digitale
               </label>
             </div>
