@@ -23,7 +23,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"
             ><img height="60" src="./assets/img/duck.png" alt=""
@@ -93,6 +93,143 @@
         </div>
       </nav>
     </header>
+    <!-- header end -->
+    <main>
+      <div class="container container-md container-lg mt-5">
+        <h3>Nuovo Libro</h3>
+        <form class="row mt-4" method="get">
+          <div class="col">
+            <div class="mb-3">
+              <label for="" class="form-label fw-medium">Nome Autore</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Inserisci il nome dell'autore"
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="" class="form-label fw-medium">Cognome Autore</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Inserisci il cognome dell'autore"
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="" class="form-label fw-medium">Cognome Autore</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Inserisci il titolo del libro"
+                aria-describedby="helpId"
+              />
+              <small id="helpId" class="text-muted"
+                >Titolo versione italiana</small
+              >
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-4">
+            <div class="mb-3">
+              <label for="" class="form-label fw-medium">Genere</label>
+              <select
+                class="form-select fw-medium"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Inserisci il cognome dell'autore"
+                aria-describedby="helpId"
+              >
+                <option selected>Scegli il genere</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="horror">Horror</option>
+              </select>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-4">
+            <div class="mb-3">
+              <label for="" class="form-label fw-medium"
+                >Anno di Pubblicazione</label
+              >
+              <input
+                type="number"
+                min="1900"
+                max="2025"
+                step="1"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Inserisci l'anno"
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-4">
+            <div class="mb-3">
+              <label for="" class="form-label fw-medium">ISBN#</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Inserisci il codice ISBN#"
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+
+          <hr class="mt-5" />
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="" class="form-label fw-medium">Note</label>
+              <input
+                type="textarea"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Inserisci eventuali note sul libro"
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label fw-medium" for="flexCheckDefault">
+                Disponibile anche in digitale
+              </label>
+            </div>
+          </div>
+
+          <div class="col">
+            <input
+              class="btn btn-primary"
+              type="submit"
+              value="Aggiungi Libro"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
